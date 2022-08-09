@@ -18,16 +18,17 @@ body{
     font-size: 15px;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;   
 }
 
 main{
-    border: solid 2px red;
+    /* border: solid 2px red; */
     width: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 98%;
 }
 
 .statistics{
@@ -88,6 +89,10 @@ h1{
     background-color: var(--Light-Grayish-Magenta);
 }
 
+.p_score{
+    margin-left: 30px;
+}
+
 .reference{
     display: flex;
     gap: 30px;
@@ -97,7 +102,7 @@ h1{
 
 .ref_1{
     width: 40%;
-    height: 240px;
+    margin-bottom: 20px;
     padding: 25px;
     border-radius: 10px;
     background-color: var(--Very-Dark-Magenta);
@@ -105,7 +110,6 @@ h1{
 
 .ref_2{
     width: 40%;
-    height: 240px;
     margin-top: 20px;
     padding: 25px;
     border-radius: 10px;
@@ -114,8 +118,8 @@ h1{
 
 .ref_3{
     width: 40%;
-    height: 240px;
     margin-top: 40px;
+    margin-bottom: -20px;
     padding: 25px;
     border-radius: 10px;
     background-color: var(--Very-Dark-Magenta);
@@ -124,9 +128,42 @@ h1{
     display: flex;
     gap: 25px;
     align-items: center;
+    margin-top: 15px;
 }
 
 .img_perfil{
     border-radius: 100%;
     width: 50px;
+}
+
+.name{
+    line-height: 20px;
+}
+
+.ref{
+    line-height: 26px;
+    font-size: 18px;
+    margin-top: 25px;   
+}
+
+.attribution{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--Very-Dark-Magenta);
+}
+
+a{
+    color: var(--Dark-Grayish-Magenta);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--Soft-Pink);
+}
+
+@media (max-width: 1024px){
+    main{
+        width: 97%;
+    }
 }
